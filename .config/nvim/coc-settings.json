@@ -1,0 +1,15 @@
+{
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "tsserver.maxTsServerMemory": 1024,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "markdown",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "xml"
+  ]
+}
