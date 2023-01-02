@@ -3,8 +3,8 @@ env:
 
 window:
   padding:
-    x: 8
-    y: 6
+    x: 1
+    #y: 2
   decorations: buttonless
 
   opacity: 0.9
@@ -28,18 +28,18 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: FiraCode Nerd Font
-    style: Retina
+    family: BlexMono Nerd Font Mono
+    style: Book
   bold:
-    family: FiraCode Nerd Font
+    family: BlexMono Nerd Font Mono
     style: Bold
   italic:
-    family: mononoki Nerd Font
+    family: BlexMono Nerd Font Mono
     style: Italic
   bold_italic:
-    family: mononoki Nerd Font
+    family: BlexMono Nerd Font Mono
     style: Bold Italic
-  size: 13.5
+  size: 14.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -212,34 +212,56 @@ font:
 
 # Colors (Gruvbox dark)
 colors:
-  # Default colors
+  ## Default colors
+  #primary:
+    ## hard contrast: background = '0x1d2021'
+    #background: '0x1d2021'
+    ## soft contrast: background = '0x32302f'
+    #foreground: '0xebdbb2'
+
+  ## Normal colors
+  #normal:
+    #black:   '0x282828'
+    #red:     '0xcc241d'
+    #green:   '0x98971a'
+    #yellow:  '0xd79921'
+    #blue:    '0x458588'
+    #magenta: '0xb16286'
+    #cyan:    '0x689d6a'
+    #white:   '0xa89984'
+
+  ## Bright colors
+  #bright:
+    #black:   '0x928374'
+    #red:     '0xfb4934'
+    #green:   '0xb8bb26'
+    #yellow:  '0xfabd2f'
+    #blue:    '0x83a598'
+    #magenta: '0xd3869b'
+    #cyan:    '0x8ec07c'
+    #white:   '0xebdbb2'
+
   primary:
-    # hard contrast: background = '0x1d2021'
     background: '0x1d2021'
-    # soft contrast: background = '0x32302f'
-    foreground: '0xebdbb2'
-
-  # Normal colors
+    foreground: '0xd4be98'
   normal:
-    black:   '0x282828'
-    red:     '0xcc241d'
-    green:   '0x98971a'
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x689d6a'
-    white:   '0xa89984'
-
-  # Bright colors
-  bright:
-    black:   '0x928374'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
+    black:   '0x32302f'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xd8a657'
+    blue:    '0x7daea3'
     magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xebdbb2'
+    cyan:    '0x89b482'
+    white:   '0xd4be98'
+  bright:
+    black:   '0x32302f'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xd8a657'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xd4be98'
 
 # Bell
 #
