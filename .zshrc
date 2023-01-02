@@ -25,5 +25,5 @@ precmd () {
   zstyle ':vcs_info:*' formats '(%b)' # git(main)
 
   # the prompt
-  export PS1="anon@mac${vcs_info_msg_0_} $ "
+  export PS1="anon@mac${vcs_info_msg_0_} %~ $ "
 }
