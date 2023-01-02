@@ -17,3 +17,13 @@ function discache() {
   echo "creating a link for $1 to /dev/null .."
   rm -rf $1 && ln -sf /dev/null $1
 }
+
+# for version control info in the prompt
+precmd () {
+  autoload -Uz vcs_info # enable vcs_info
+  vcs_info # always load before displaying the prompt
+  zstyle ':vcs_info:*' formats '(%b)' # git(main)
+
+  # the prompt
+  export PS1="anon@mac${vcs_info_msg_0_} $ "
+}
