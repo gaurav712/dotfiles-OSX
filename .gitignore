@@ -16,6 +16,8 @@
 .hawtjni
 .CFUserTextEncoding
 .terminfo
+.cocoapods
+.m2
 
 .cargo
 .rustup
