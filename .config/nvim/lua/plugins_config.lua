@@ -2,13 +2,10 @@ local g = vim.g
 local o = vim.o
 
 -- Colorscheme
-g.gruvbox_italic = 1
-g.gruvbox_bold = 1
-g.gruvbox_underline = 1
-g.gruvbox_contrast_dark='hard'
+g.gruvbox_material_background='hard'
 
 vim.cmd [[
-colorscheme gruvbox
+colorscheme gruvbox-material
 ]]
 
 -- Treesitter
@@ -26,17 +23,12 @@ require'nvim-treesitter.configs'.setup {
 require('telescope').setup()
 require('telescope').load_extension('fzf')
 
--- File browser
---require("telescope").load_extension "file_browser"
-
--- Auto pairs
---require("nvim-autopairs").setup {}
-
 -- Git modifications sign
 require('gitsigns').setup()
 
 -- Initialise statusline
 require('lualine').setup()
+require('slanted')
 
 -------------------
 -- Completion & LSP
