@@ -16,6 +16,7 @@ o.numberwidth = 5
 o.relativenumber = true
 o.signcolumn = 'yes:2'
 o.cursorline = true
+o.colorcolumn = '80'
 
 -- Better editing experience
 o.expandtab = true
